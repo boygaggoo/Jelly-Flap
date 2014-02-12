@@ -1,0 +1,28 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    @import GameKit;
+
+#endif
+
+
+#define FString(format, ...) [NSString stringWithFormat:(format), ## __VA_ARGS__]
+
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((CGFloat)((rgbValue & 0xFF0000) >> 16))/255.0 green:((CGFloat)((rgbValue & 0xFF00) >> 8))/255.0 blue:((CGFloat)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+#define IsPad      (UI_USER_INTERFACE_IDIOM() != UIUserInterfaceIdiomPhone)
+#define DoubleIfIpad    (IsPad ? 2 : 1)
+
+
