@@ -15,8 +15,9 @@ This is a universal app written for iOS 7.
 
 ![alt tag](http://domenicali.net/files/jellyflap3m.png)
 
-I would like to credit Sophie Kirschner (reddit.com/u/sofa_) for the wonderful artwork :) Thank you
-
+Credit
+------
+All artwork done by: https://github.com/pineapplemachine
 
 
 
